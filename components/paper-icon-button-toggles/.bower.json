@@ -1,0 +1,25 @@
+{
+  "name": "paper-icon-button-toggles",
+  "main": "paper-icon-button-toggles.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "paper-icon-button": "PolymerElements/paper-icon-button#^1.1.1"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "homepage": "https://github.com/shortishly/paper-icon-button-toggles",
+  "_release": "419aa24a86",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "419aa24a86be65eb6058f44e30fba7b527e8ce30"
+  },
+  "_source": "git://github.com/shortishly/paper-icon-button-toggles.git",
+  "_target": "master",
+  "_originalSource": "shortishly/paper-icon-button-toggles",
+  "_direct": true
+}

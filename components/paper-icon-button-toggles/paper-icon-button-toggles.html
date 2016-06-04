@@ -1,0 +1,54 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-icon-button/paper-icon-button.html">
+
+<dom-module id="paper-icon-button-toggles">
+    <template>
+        <style>
+         :host {
+             display: block;
+         }
+        </style>
+        <paper-icon-button
+            icon="[[icon]]"
+            active="{{active}}"
+            toggles>
+        </paper-icon-button>
+    </template>
+
+    <script>
+     Polymer({
+
+         is: 'paper-icon-button-toggles',
+
+         properties: {
+             activeIcon: {
+                 type: String,
+                 value: 'expand-less',
+             },
+
+             inactiveIcon: {
+                 type: String,
+                 value: 'expand-more',
+             },
+
+             active: {
+                 type: Boolean,
+                 value: false,
+                 notify: true,
+             },
+
+             icon: {
+                 type: String,
+                 readOnly: true,
+                 notify: true,
+                 computed: '_icon(active)',
+             },
+         },
+
+         _icon: function(active) {
+             return active ? this.activeIcon : this.inactiveIcon;
+         },
+
+     });
+    </script>
+</dom-module>
